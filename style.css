@@ -32,10 +32,7 @@ nav img {
 }
 
 body{
-    background-image: url('Img/background_fortnite.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-image: url('Img/Fundo.jpg');
 }
 
 video{
