@@ -45,6 +45,30 @@ video{
     position: absolute;
 }
 
+#mudo{
+    background-color: rgb(255, 238, 0);
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 20px; /* Distância do botão até a parte inferior da página */
+    right: 20px; /* Distância do botão até a borda direita da página */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    font-family: 'Burbank Big Condensed Black', Arial, Helvetica, sans-serif;
+}
+
+#mudo:hover{
+    background-color: rgba(0, 255, 157, 0.493);
+    color: white;
+}
+
 #texto{
     margin: 20px;
     margin-top: 100px;
@@ -59,21 +83,23 @@ video{
     font-size: 20px;
 }
 
+#instagran{
+    margin-top: 25px;
+}
+
 #facebook{
     width: 45px;
     height: 45px;
-}
-
-#instagran{
     margin-top: 18px;
 }
 
 #twitter{
-    margin-top: 18px;
+    height: 60px;
+    width: 60px;
 }
 
 #youtube{
-    margin-top: 18px;
+    margin-top: 25px;
 }
 
 #botao{
@@ -88,31 +114,261 @@ video{
     transform: all 0.3s ease;
     margin-left: 250px;
     margin-top: 30px;
+    font-family: 'Burbank Big Condensed Black', Arial, Helvetica, sans-serif;
 }
 
 #botao:hover{
     background-color: aqua;
     color: white;
 }
-    
-@font-face {
-    font-family: 'Burbank Big Condensed Black'; /* nome da fonte */
-    src: url('Fonts/Burbank\ Big\ Condensed\ Black.ttf') format('truetype'); /* caminho para o arquivo ttf */
+
+#texto h3{
+    margin: 20px;
 }
 
-/*
-.container{
-    border-radius: 8px;
-    background-image: url('Img/temporada\ 2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 900px;
+#depoimentos{
+    margin-left: 30px;
+}
+
+#vento:hover{
+    background-color: rgba(134, 180, 221, 0.61);
+}
+
+#fogo:hover{
+    background-color: rgba(228, 21, 21, 0.76);
+}
+
+#agua:hover{
+    background-color: rgba(5, 49, 245, 0.438);;
+}
+
+#terra:hover{
+    background-color: rgba(160, 97, 19, 0.822);
+}
+
+.col-md-4:hover{
+    background-color: aqua;
+}
+
+.col-md-4{
+    margin-left: 12px;
+    width: 612.5px;
+}
+
+.col-md-3{
+    margin-left: 12px;
+    width: 456.5px;
+}
+
+.col-md-3:hover{
+    background-color: rgba(0, 255, 255, 0.438);
+}
+    
+@font-face {
+    font-family: 'Burbank Big Condensed Black'; 
+    src: url('Fonts/Burbank\ Big\ Condensed\ Black.ttf') format('truetype'); 
 }
 
 .img-responsive{
     margin-left: 400px;
+    margin-top: 20px;
     width: 60%;
     height: 60%;
 }
-*/
 
+.carousel-control-prev{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.carousel-control-prev:hover{
+    background-color: rgba(0, 255, 255, 0.322);
+}
+
+.carousel-control-next{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.carousel-control-next:hover{
+    background-color: rgba(0, 255, 255, 0.322);
+}
+
+.titulo{
+    background-color: aqua;
+    color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    transform: all 0.3s ease;
+    margin-left: 800px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Burbank Big Condensed Black', Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin-left: 18px;
+}
+
+#texto img{
+    width: 30%;
+    height: 30%;
+    margin-left: 100px;
+}
+
+.informacoes{
+    background-color: aliceblue;
+    font-family: 'Burbank Big Condensed Black', Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    width: 1862px;
+    margin-left: 20px;
+}
+.informacoes img{
+    width: 80%;
+    height: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.informacoes p{
+    font-size: 19px;
+}
+
+.informacoes h2{
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    color: aliceblue;
+}
+
+.informacoes h3{
+    margin-left: 10px;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+  }
+
+  .video-overlay video {
+    width: 100%;
+    height: 94%;
+    right: 1px;
+    object-fit: cover; 
+  }
+
+  .video-overlay-asa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+  }
+
+  .video-overlay-asa video{
+    width: 100%;
+    height: 160%;
+    right: 1px;
+    object-fit: cover; 
+  }
+
+  .video-overlay-corrente{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+  }
+
+  .video-overlay-corrente video{
+    width: 100%;
+    height: 94%;
+    right: 1px;
+    object-fit: cover; 
+  }
+
+  .video-overlay-smg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+  }
+
+  .video-overlay-smg video{
+    width: 100%;
+    height: 94%;
+    right: 1px;
+    object-fit: cover; 
+  }
+
+  .video-overlay-espingarda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+  }
+
+  .video-overlay-espingarda video{
+    width: 100%;
+    height: 94%;
+    right: 1px;
+    object-fit: cover; 
+  }
+
+  .video-overlay-rifle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+  }
+
+  .video-overlay-rifle video{
+    width: 100%;
+    height: 94%;
+    right: 1px;
+    object-fit: cover; 
+  }
+
+footer{
+    background-color: aqua;
+    width: 1862px;
+    margin-left: 20px;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Burbank Big Condensed Black', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
