@@ -1,15 +1,3 @@
-function toggleMute() {
-    var music = document.getElementById('background-music');
-
-    if (music.muted) {
-      music.muted = false; 
-      document.querySelector('button').textContent = 'Mutar'
-    } else {
-      music.muted = true; 
-      document.querySelector('button').textContent = 'Desmutar'; // Atualiza o texto do botão
-    }
-  }
-
 function mostrarVideo() {
     document.getElementById('video-overlay').style.display = 'block';
   }

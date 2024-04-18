@@ -52,8 +52,8 @@ video{
     height: 50px;
     font-size: 20px;
     position: fixed;
-    bottom: 20px; /* Distância do botão até a parte inferior da página */
-    right: 20px; /* Distância do botão até a borda direita da página */
+    bottom: 20px;
+    right: 20px; 
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -193,7 +193,6 @@ video{
 
 .titulo{
     background-color: aqua;
-    color: aliceblue;
     margin: 10px;
     padding: 10px;
     width: 300px;
@@ -208,6 +207,11 @@ video{
 
 p{
     margin-left: 18px;
+}
+
+#galery{
+    margin: 0px;
+    padding: 0px;
 }
 
 #texto img{
@@ -238,7 +242,6 @@ p{
     text-align: center;
     padding: 10px;
     background-color: aqua;
-    color: aliceblue;
 }
 
 .informacoes h3{
@@ -368,4 +371,106 @@ footer p{
 footer img{
     width: 30px;
     height: 30px;
+}
+
+@media screen and (max-width: 610px){
+    h1,h2{
+        text-align: center;
+    }
+
+    #depoimentos{
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    #depoimentos h3{
+        margin-right: 1373px;
+        float: left;
+    }
+    #depoimentos img{
+        width: 420px;
+        margin-right: 30px;
+    }
+    .informacoes{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+    
+    .informacoes h3{
+        overflow-wrap: break-word;
+    }
+    
+    .informacoes p{
+        margin-right: 1px;
+        text-align: justify;
+        float: left;
+        font-size: 14px;
+    }
+
+    #escopeta{
+        overflow-wrap: break-word;
+        width: 80%;
+    }
+
+    footer{
+        padding: 0px;
+        margin: 0px;
+    }
+    footer p{
+        margin-right: 1370px;
+    }
+
+    p{
+        text-align: unset;
+    }
+    #botao{
+        margin-left: 70px;
+    }
+    nav img{
+        margin-bottom: -90px;
+    }
+    .carousel-item{
+        margin-left: -300px;
+    }
+    .titulo{
+        margin-left: 100px;
+    }
+    #youtube{
+        margin-right: 160px;
+    }
+
+    #twitter{
+        margin-right: 100px;
+    }
+
+    #facebook{
+        margin-right: 55px;
+    }
+
+    #instagran{
+        margin-left: 80px;
+    }
+
+    .informacoes{
+        margin-right: 40px;
+    }
+
+    .video-overlay-asa{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        display: none; 
+      }
+    
+      .video-overlay-asa video{
+        width: 100%;
+        height: 220%;
+        right: 1px;
+        object-fit: cover; 
+      }
+
 }
